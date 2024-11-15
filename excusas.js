@@ -23,20 +23,11 @@ var cuando = [
 ];
 
 function generador(quien, accion, que, cuando) {
-  let randomQuien = Math.floor(Math.random() * quien.length);
-  let randomAccion = Math.floor(Math.random() * accion.length);
-  let randomQue = Math.floor(Math.random() * que.length);
-  let randomCuando = Math.floor(Math.random() * cuando.length);
-  return (
-    quien[randomQuien] +
-    " " +
-    accion[randomAccion] +
-    " " +
-    que[randomQue] +
-    " " +
-    cuando[randomCuando] +
-    "."
-  );
+ let randomQuien = Math.floor(Math.random() * quien.length);
+let  randomAccion = Math.floor(Math.random() * accion.length);
+let  randomQue = Math.floor(Math.random() * que.length);
+let  randomCuando = Math.floor(Math.random() * cuando.length);
+  return (quien[randomQuien] + " " +  accion[randomAccion] +  " " + que[randomQue] + " " + cuando[randomCuando] +".");
 }
 
 function onLoad() {
